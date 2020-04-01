@@ -1,0 +1,18 @@
+@import '_variables.scss';
+*{
+    padding: 0;
+    border: none;
+    margin: 0;
+    font-size: $default_font_size;
+}
+@import '_functions.scss';
+@import '_body.scss';
+@import '_first-section.scss';
+@import '_buttons.scss';
+@import '_episodes-section.scss';
+@import '_phone-section.scss';
+@import '_image-section.scss';
+@import '_nav.scss';
+@import '_iconssection.scss';
+@import '_footer.scss';
+@import '_last-section.scss'

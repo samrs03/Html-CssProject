@@ -1,0 +1,50 @@
+.background_container {
+    width: 100%;
+    .blue_background {
+        width: 100%;
+        transform: skewY(-5deg);
+        background: linear-gradient(22deg, $gradient_1 0%, $gradient_2 100%);
+        padding: 0;
+        .episodes1 {
+            padding: 10% 5% 0 5%;
+            transform: skewY(5deg);
+            font-size: 2.1rem;
+            color: $font_color_responsive;
+            font-weight: lighter;
+            font-family: $font_sans;
+            line-height: 42px;
+            letter-spacing: 0.1rem;
+            @include bigscreens {
+                padding: 10% 0 2% 10%;
+                font-size: 48px;
+                line-height: 64px;
+            }
+        }
+        .pod_container {
+            width: 100%;
+            transform: skewY(5deg);
+            @include bigscreens {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+            iframe {
+                width: 93.125%;
+                padding: 1.25% 3.4375%;  
+                @include bigscreens {
+                    width: 40%;
+                    padding: 0 0 5% 5%;
+                }  
+            }
+            &:first-child{
+                padding: 5% 3.4375% 0 3.4375%;
+            }
+            .last_frame {
+                padding: 0 3.4375% 143.5px 3.4375%;
+                @include bigscreens {
+                    padding: 0 0 150px 5%;
+                }
+            }
+        }
+    }   
+}

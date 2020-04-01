@@ -1,0 +1,74 @@
+.navigation {
+    overflow: hidden;
+    //position: sticky;
+    top: 0;
+    width: 100%;
+    background-color: $main_background_color;
+    #hamburger {
+        display: none;
+        &:checked ~ ul {
+            display: block;
+            background-color: $responsive_menu;
+            @include bigscreens {
+                display: flex;
+                background: $main_background_color;
+            }
+        }
+        @include bigscreens {
+            display: none;
+        }
+    }
+    .logo { 
+        left: 0;
+        padding: 10px 0 0 10px;
+        @include bigscreens {
+            padding: 0 0 0 2%;
+        }
+    }
+    label {
+        float: right;
+        padding: 10px 10px 0 0;
+        color: $font-color;
+        @include bigscreens {
+            display: none;
+        }
+    }
+    ul {
+        display: none;
+        list-style-type: none;
+        padding: 10px 0 0 20px;
+        li {
+            padding: 0 0 2rem 0;
+            a { 
+                font-family: $font_mono;               
+                color: $font_color_responsive; 
+                text-decoration: none;
+                padding: 5px 0 5px 0;            
+                &:hover{
+                    color: $font_button_color;
+                } 
+                @include bigscreens {
+                    color: $font-color;
+                }
+            }
+            &:first-child {
+                padding-top: 1.33rem;
+                @include bigscreens {
+                    padding: 0;
+                }
+            }
+            @include bigscreens {
+                padding: 0 0 0 4rem;
+            }
+        }
+        @include bigscreens {
+            display: flex;
+            padding: 2% 5%;
+            margin: 0 0 0 auto;
+        }    
+    }
+    @include bigscreens {
+        display: flex;
+        align-items: center;
+    }
+}

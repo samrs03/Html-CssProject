@@ -1,0 +1,814 @@
+* {
+  padding: 0;
+  border: none;
+  margin: 0;
+  font-size: 12px;
+}
+
+body {
+  background-repeat: white;
+  font-family: "IBM Plex Mono", monospace;
+  color: black;
+}
+
+.first-section {
+  padding: 0 5%;
+}
+
+.first-section h1 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3rem;
+  font-weight: lighter;
+  line-height: 3.5rem;
+  padding: 2rem 0 0 0;
+}
+
+.first-section h1 .crossed-line {
+  font-size: 3rem;
+  text-decoration: line-through;
+}
+
+@media (min-width: 770px) {
+  .first-section h1 .crossed-line {
+    font-size: 5.33rem;
+    line-height: 7rem;
+  }
+}
+
+.first-section h1 .blue-period {
+  color: #0000ec;
+  font-size: 3rem;
+}
+
+@media (min-width: 770px) {
+  .first-section h1 {
+    font-size: 5.33rem;
+    line-height: 7rem;
+    padding: 10rem 0 0 0;
+  }
+}
+
+.first-section .paragraph p {
+  padding: 1.33rem 0 0 0;
+}
+
+@media (min-width: 770px) {
+  .first-section .paragraph p {
+    font-size: 1.33rem;
+    line-height: 2rem;
+  }
+}
+
+@media (min-width: 770px) {
+  .first-section .paragraph {
+    max-width: 55.33rem;
+  }
+}
+
+.button {
+  padding: 3rem 0;
+  display: block;
+}
+
+.podcast_button {
+  height: 56px;
+  width: 100%;
+  background-color: #00f3bb;
+  color: black;
+}
+
+.podcast_button:hover {
+  cursor: pointer;
+  color: white;
+  background: linear-gradient(225deg, #0000FE 0%, #00F0B8 100%);
+}
+
+.podcast_button p {
+  text-align: center;
+  font-weight: bold;
+  font-size: 1.33rem;
+  line-height: 56px;
+}
+
+@media (min-width: 770px) {
+  .podcast_button {
+    width: 226px;
+  }
+}
+
+.background_container {
+  width: 100%;
+}
+
+.background_container .blue_background {
+  width: 100%;
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  background: linear-gradient(22deg, #0000A3 0%, #0000FF 100%);
+  padding: 0;
+}
+
+.background_container .blue_background .episodes1 {
+  padding: 10% 5% 0 5%;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+  font-size: 2.1rem;
+  color: white;
+  font-weight: lighter;
+  font-family: "IBM Plex Sans", sans-serif;
+  line-height: 42px;
+  letter-spacing: 0.1rem;
+}
+
+@media (min-width: 770px) {
+  .background_container .blue_background .episodes1 {
+    padding: 10% 0 2% 10%;
+    font-size: 48px;
+    line-height: 64px;
+  }
+}
+
+.background_container .blue_background .pod_container {
+  width: 100%;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+}
+
+@media (min-width: 770px) {
+  .background_container .blue_background .pod_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.background_container .blue_background .pod_container iframe {
+  width: 93.125%;
+  padding: 1.25% 3.4375%;
+}
+
+@media (min-width: 770px) {
+  .background_container .blue_background .pod_container iframe {
+    width: 40%;
+    padding: 0 0 5% 5%;
+  }
+}
+
+.background_container .blue_background .pod_container:first-child {
+  padding: 5% 3.4375% 0 3.4375%;
+}
+
+.background_container .blue_background .pod_container .last_frame {
+  padding: 0 3.4375% 143.5px 3.4375%;
+}
+
+@media (min-width: 770px) {
+  .background_container .blue_background .pod_container .last_frame {
+    padding: 0 0 150px 5%;
+  }
+}
+
+.phone_section {
+  width: 100%;
+  -webkit-transform: translateY(-100px);
+          transform: translateY(-100px);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 770px) {
+  .phone_section {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-transform: translateY(0px);
+            transform: translateY(0px);
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+}
+
+.phone_section .phone_container {
+  width: 100%;
+}
+
+.phone_section .phone_container img {
+  width: 100%;
+}
+
+@media (min-width: 770px) {
+  .phone_section .phone_container img {
+    padding: 0 0 0 180px;
+    width: 457.6px;
+    -webkit-transform: translateY(-90px);
+            transform: translateY(-90px);
+  }
+}
+
+.phone_section .text_container {
+  padding: 0 3%;
+}
+
+@media (min-width: 770px) {
+  .phone_section .text_container {
+    -webkit-transform: translateY(80px);
+            transform: translateY(80px);
+  }
+}
+
+.phone_section .text_container h3 {
+  font-family: "IBM Plex Sans", sans-serif;
+  color: black;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  font-weight: lighter;
+  letter-spacing: 0;
+}
+
+@media (min-width: 770px) {
+  .phone_section .text_container h3 {
+    font-size: 4rem;
+  }
+}
+
+.phone_section .text_container .text1 {
+  padding-top: 3%;
+}
+
+@media (min-width: 770px) {
+  .phone_section .text_container .text1 {
+    display: inline-block;
+    padding: 5% 0;
+  }
+}
+
+.phone_section .text_container .text2 {
+  padding-bottom: 3%;
+}
+
+@media (min-width: 770px) {
+  .phone_section .text_container .text2 {
+    display: inline-block;
+    padding: 5% 0;
+  }
+}
+
+.phone_section .text_container p {
+  font-size: 1.1666666666667rem;
+  font-family: "IBM Plex Mono", monospace;
+  line-height: 1.83333333rem;
+  letter-spacing: 0;
+}
+
+@media (min-width: 770px) {
+  .phone_section .text_container p {
+    padding: 0 150px 0 0;
+    font-size: 1.333333rem;
+    line-height: 2rem;
+    height: 204px;
+  }
+}
+
+.image-section {
+  width: 100%;
+  -webkit-transform: translateY(-50px);
+          transform: translateY(-50px);
+}
+
+.image-section .image-section-title {
+  padding: 3% 0;
+}
+
+.image-section .image-section-title h2 {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3rem;
+  line-height: 3.5rem;
+  width: 90%;
+  padding: 0 5%;
+  font-weight: lighter;
+}
+
+@media (min-width: 770px) {
+  .image-section .image-section-title h2 {
+    padding: 0 0 0 14%;
+    width: 400px;
+  }
+}
+
+.image-section .images-container {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 770px) {
+  .image-section .images-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
+.image-section .images-container img {
+  width: 100%;
+}
+
+@media (min-width: 770px) {
+  .image-section .images-container img {
+    width: 33.3333333333%;
+  }
+}
+
+.navigation {
+  overflow: hidden;
+  top: 0;
+  width: 100%;
+  background-color: white;
+}
+
+.navigation #hamburger {
+  display: none;
+}
+
+.navigation #hamburger:checked ~ ul {
+  display: block;
+  background-color: #0000ec;
+}
+
+@media (min-width: 770px) {
+  .navigation #hamburger:checked ~ ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    background: white;
+  }
+}
+
+.navigation #hamburger:checked ~ label .close {
+  display: block;
+}
+
+@media (min-width: 770px) {
+  .navigation #hamburger:checked ~ label .close {
+    display: none;
+  }
+}
+
+.navigation #hamburger:checked ~ label .burguer {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .navigation #hamburger:checked ~ label .burguer {
+    display: none;
+  }
+}
+
+.navigation .logo {
+  left: 0;
+  padding: 10px 0 0 10px;
+}
+
+@media (min-width: 770px) {
+  .navigation .logo {
+    padding: 0 0 0 2%;
+  }
+}
+
+.navigation label {
+  float: right;
+  padding: 10px 10px 0 0;
+  color: black;
+}
+
+.navigation label .close {
+  display: none;
+}
+
+@media (min-width: 770px) {
+  .navigation label {
+    display: none;
+  }
+}
+
+.navigation ul {
+  display: none;
+  list-style-type: none;
+  padding: 10px 0 0 20px;
+}
+
+.navigation ul li {
+  padding: 0 0 2rem 0;
+}
+
+.navigation ul li a {
+  font-family: "IBM Plex Mono", monospace;
+  color: white;
+  padding: 5px 0 5px 0;
+}
+
+.navigation ul li a:hover {
+  color: #00f3bb;
+}
+
+@media (min-width: 770px) {
+  .navigation ul li a {
+    color: black;
+  }
+}
+
+.navigation ul li:first-child {
+  padding-top: 1.33rem;
+}
+
+@media (min-width: 770px) {
+  .navigation ul li:first-child {
+    padding: 0;
+  }
+}
+
+@media (min-width: 770px) {
+  .navigation ul li {
+    padding: 0 0 0 4rem;
+  }
+}
+
+@media (min-width: 770px) {
+  .navigation ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    padding: 2% 5%;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (min-width: 770px) {
+  .navigation {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+.icons-section .icons-container .first-icon p, .icons-section .icons-container .second-icon p, .icons-section .icons-container .third-icon p, .icons-section .icons-container .fourth-icon p {
+  font-size: 2rem;
+  font-weight: lighter;
+  text-align: center;
+  font-family: "IBM Plex Sans", sans-serif;
+}
+
+.icons-section .icons-container .second-icon img, .icons-section .icons-container .third-icon img, .icons-section .icons-container .fourth-icon img {
+  padding: 20% 0 0 0;
+}
+
+.icons-section .icons-title-container h2 {
+  padding: 0 5%;
+  font-size: 3rem;
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: lighter;
+  letter-spacing: 0;
+  line-height: 3rem;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-title-container h2 {
+    font-size: 4rem;
+    line-height: 5.1666667rem;
+    padding: 0 10%;
+  }
+}
+
+.icons-section .icons-container {
+  padding: 10% 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    padding: 5% 10%;
+  }
+}
+
+.icons-section .icons-container .first-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .first-icon {
+    width: 260px;
+  }
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .first-icon p {
+    width: 100%;
+    padding: 5% 0;
+  }
+}
+
+.icons-section .icons-container .second-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .second-icon {
+    width: 260px;
+  }
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .second-icon img {
+    width: 104px;
+    padding: 0;
+  }
+}
+
+.icons-section .icons-container .second-icon p {
+  width: 90%;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .second-icon p {
+    width: 100%;
+    height: 48px;
+    padding: 5% 0;
+  }
+}
+
+.icons-section .icons-container .third-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .third-icon {
+    width: 260px;
+  }
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .third-icon img {
+    width: 104px;
+    padding: 0;
+  }
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .third-icon p {
+    width: 100%;
+    padding: 5% 0;
+  }
+}
+
+.icons-section .icons-container .fourth-icon {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .fourth-icon {
+    width: 260px;
+  }
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .fourth-icon img {
+    width: 104px;
+    padding: 0;
+  }
+}
+
+.icons-section .icons-container .fourth-icon p {
+  width: 90%;
+}
+
+@media (min-width: 770px) {
+  .icons-section .icons-container .fourth-icon p {
+    width: 100%;
+    height: 48px;
+    padding: 5% 0;
+  }
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 100%;
+}
+
+@media (min-width: 770px) {
+  footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+footer .first-sign-container {
+  width: 227px;
+  padding: 10% 10% 5% 10%;
+}
+
+@media (min-width: 770px) {
+  footer .first-sign-container {
+    padding: 3% 5%;
+    width: 70%;
+  }
+}
+
+footer .first-sign-container p {
+  color: black;
+  font-size: 1.166666667rem;
+  letter-spacing: 0;
+  line-height: 1.833333rem;
+}
+
+footer .second-sign-container {
+  width: 227px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  padding: 5% 10%;
+}
+
+@media (min-width: 770px) {
+  footer .second-sign-container {
+    padding: 3% 5%;
+    width: 30%;
+  }
+}
+
+footer .second-sign-container a {
+  color: black;
+}
+
+.last-section {
+  position: relative;
+  width: 100%;
+  height: 341px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+@media (min-width: 770px) {
+  .last-section {
+    height: 518px;
+  }
+}
+
+.last-section .blue-container {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  z-index: 2;
+  background: linear-gradient(22deg, #0000A3 0%, #0000FF 100%);
+  -webkit-transform: skewY(-5deg);
+          transform: skewY(-5deg);
+  -webkit-transform-origin: top right;
+          transform-origin: top right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+@media (min-width: 770px) {
+  .last-section .blue-container {
+    height: 550px;
+  }
+}
+
+.last-section .blue-container .last-text-container {
+  width: 90%;
+  padding: 15% 5% 12% 5%;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+}
+
+@media (min-width: 770px) {
+  .last-section .blue-container .last-text-container {
+    padding: 10% 5% 3% 5%;
+  }
+}
+
+.last-section .blue-container .last-text-container p {
+  font-family: "IBM Plex Sans", sans-serif;
+  font-size: 3rem;
+  letter-spacing: 0;
+  line-height: 3.5rem;
+  font-weight: lighter;
+  text-align: center;
+  color: white;
+}
+
+@media (min-width: 770px) {
+  .last-section .blue-container .last-text-container p {
+    font-size: 4rem;
+    line-height: 5rem;
+    font-weight: lighter;
+  }
+}
+
+.last-section .blue-container .last-button {
+  padding: 0 5%;
+  -webkit-transform: skewY(5deg);
+          transform: skewY(5deg);
+}
+
+@media (min-width: 770px) {
+  .last-section .blue-container .last-button {
+    padding: 0 0 0 42%;
+  }
+}
+/*# sourceMappingURL=styles.css.map */

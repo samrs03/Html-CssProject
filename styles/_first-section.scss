@@ -1,0 +1,43 @@
+.first-section {
+    padding: 0 5%;
+    h1 {
+        font-family: $font_sans;
+        font-size: $title_text_mobile;
+        font-weight: lighter;
+        line-height: $line_height_mobile;
+        padding: 2rem 0 0 0;
+        .crossed-line {
+            font-size: $title_text_mobile;
+            text-decoration: line-through;
+            @include bigscreens {
+                font-size: $title_text_desktop;
+                line-height: $line_height_desktop;
+            }
+        }
+        .blue-period {
+            color: $color-dot;
+            font-size: $title_text_mobile;
+        }
+        @include bigscreens {
+            font-size: $title_text_desktop;
+            line-height: 7rem;
+            padding: 10rem 0 0 0;
+        }
+    }
+    .paragraph {
+        p {
+            padding: 1.33rem 0 0 0;
+            @include bigscreens {
+                font-size: 1.33rem;
+                line-height: 2rem;
+            }
+        }
+        @include bigscreens {
+            max-width: 55.33rem;
+        }
+    }
+}
+.button {
+    padding: $title_text_mobile 0;
+    display: block;
+}
